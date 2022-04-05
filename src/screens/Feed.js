@@ -24,7 +24,7 @@ const DATA = [
   },
 ];
 
-const _Feed = ({ eva }) => {
+const _Feed = ({ eva, navigation }) => {
   const renderItem = ({ item }) => (
     <View style={eva.style.card}>
       <Image source={{ uri: item.imageURI }} style={eva.style.cardImage} />
@@ -32,7 +32,7 @@ const _Feed = ({ eva }) => {
         <Text category="s1" style={eva.style.cardTitle}>
           {item.postTitle}
         </Text>
-        <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
+        <TouchableOpacity onPress={() => alert('Profile')}>
           <Avatar source={{ uri: item.avatarURI }} size="small" style={eva.style.cardAvatar} />
         </TouchableOpacity>
       </View>
