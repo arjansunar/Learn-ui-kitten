@@ -4,7 +4,7 @@ import { Layout } from '@ui-kitten/components';
 
 const Profile = () => {
   return (
-    <Layout style={styles}>
+    <Layout style={styles.layout}>
       <Text>Profile</Text>
     </Layout>
   );

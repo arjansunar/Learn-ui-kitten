@@ -4,7 +4,7 @@ import { Layout } from '@ui-kitten/components';
 
 const Activity = () => {
   return (
-    <Layout style={styles}>
+    <Layout style={styles.layout}>
       <Text>Activity</Text>
     </Layout>
   );

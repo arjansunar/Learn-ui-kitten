@@ -4,7 +4,7 @@ import { Layout } from '@ui-kitten/components';
 
 const AddPost = () => {
   return (
-    <Layout style={styles}>
+    <Layout style={styles.layout}>
       <Text>AddPost</Text>
     </Layout>
   );

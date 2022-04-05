@@ -4,6 +4,7 @@ import React from 'react';
 
 // screens
 import { Feed, Search, AddPost, Activity, Profile } from '../screens';
+import { FeedStack } from './StackNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -12,7 +13,7 @@ export function TabNavigator() {
     <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen
         name="Feed"
-        component={Feed}
+        component={FeedStack}
         options={{
           tabBarIcon: ({ focused }) => (
             <Icon name="home-outline" width={32} height={32} fill={focused ? '#111' : '#939393'} />
